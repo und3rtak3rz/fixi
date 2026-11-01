@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" fill="none">
+  <defs>
+    <pattern id="city" width="150" height="120" patternUnits="userSpaceOnUse" patternTransform="rotate(-27 600 250)">
+      <rect x="9" y="9" width="52" height="40" rx="5" fill="#eceef2" stroke="#e7e9ee"/>
+      <rect x="73" y="9" width="61" height="40" rx="5" fill="#eef0f3" stroke="#e9ebef"/>
+      <rect x="9" y="61" width="52" height="42" rx="5" fill="#eceef1" stroke="#e7e9ed"/>
+      <rect x="73" y="61" width="61" height="42" rx="5" fill="#edf0f3" stroke="#e8ebef"/>
+      <path d="M0 112h150M142 0v120" stroke="white" stroke-width="9"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="1200" y2="350" gradientUnits="userSpaceOnUse"><stop stop-color="#fff" stop-opacity=".65"/><stop offset=".6" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".2"/></linearGradient>
+  </defs>
+  <path fill="#f8f9fb" d="M0 0h1200v500H0z"/><path fill="url(#city)" d="M0 0h1200v500H0z"/>
+  <path d="M160-40c135 70 114 168 254 192s147-46 238 20 49 140 158 162 177-4 257 76 83 58 163 81" stroke="#e4edf2" stroke-width="29"/>
+  <path d="M160-40c135 70 114 168 254 192s147-46 238 20 49 140 158 162 177-4 257 76 83 58 163 81" stroke="#edf3f7" stroke-width="18"/>
+  <path d="m682 53 103-26 67 59-23 82-95 16-63-57zM365 324l88-33 78 55-16 85-89 28-68-51zM991 43l89 19 27 63-70 49-83-37z" fill="#ecf0ec"/>
+  <path d="m-35 445 1282-396M296-46l582 599M-20 147l1279 197" stroke="#e4e7ec" stroke-width="24"/>
+  <path d="m-35 445 1282-396M296-46l582 599M-20 147l1279 197" stroke="#fff" stroke-width="19"/>
+  <path d="M284 85C478-30 873-5 1012 159s-20 318-299 321C426 484 163 273 284 85Z" stroke="#e7e9ee" stroke-width="17"/>
+  <path d="M284 85C478-30 873-5 1012 159s-20 318-299 321C426 484 163 273 284 85Z" stroke="#fff" stroke-width="13"/>
+  <path d="m704 318 58-27 26-34 112-37" stroke="#f6c9bb" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 8"/>
+  <circle cx="704" cy="318" r="23" fill="#fff" fill-opacity=".65"/><circle cx="704" cy="318" r="12" fill="#f2d8cf" fill-opacity=".5"/><circle cx="704" cy="318" r="5" fill="#d6a99b" stroke="#fff" stroke-width="2"/>
+  <g font-family="Arial,sans-serif" font-size="9" letter-spacing="1.5" fill="#bcc1c9"><text x="434" y="80">ЦЕНТРАЛЬНЫЙ</text><text x="910" y="151">ПЕРВОМАЙСКИЙ</text><text x="849" y="420">ЛЕНИНСКИЙ</text></g>
+  <g font-family="Arial,sans-serif" font-size="8" fill="#c0c5ce"><text x="653" y="122" transform="rotate(8 653 122)">проспект Независимости</text><text x="578" y="264" transform="rotate(-17 578 264)">проспект Победителей</text></g>
+  <path fill="url(#fade)" d="M0 0h1200v500H0z"/>
+</svg>

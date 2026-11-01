@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="660" viewBox="0 0 980 660" fill="none">
+<defs><linearGradient id="body" x1="460" y1="160" x2="570" y2="500" gradientUnits="userSpaceOnUse"><stop stop-color="#5e686a"/><stop offset=".32" stop-color="#303c3f"/><stop offset="1" stop-color="#111b1e"/></linearGradient><linearGradient id="glass" x1="348" y1="155" x2="600" y2="330" gradientUnits="userSpaceOnUse"><stop stop-color="#0c1519"/><stop offset=".5" stop-color="#25383e"/><stop offset="1" stop-color="#071214"/></linearGradient><radialGradient id="halo"><stop stop-color="#da8b3830"/><stop offset="1" stop-color="#da8b3800"/></radialGradient><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0v40" stroke="#6f7c7e" stroke-opacity=".1"/></pattern></defs>
+<path fill="url(#grid)" d="M0 0h980v660H0z"/><ellipse cx="533" cy="367" rx="390" ry="240" fill="url(#halo)"/>
+<g transform="translate(12 -7)"><ellipse cx="496" cy="481" rx="355" ry="60" fill="#000" fill-opacity=".35"/>
+<g transform="rotate(-14 500 340)">
+<path d="M174 341c26-33 73-62 107-74l96-86c25-19 69-24 109-21l141 15c44 5 77 28 110 62l77 86c30 16 56 44 58 74l-7 55c-61 38-133 54-211 58l-335-4c-75-9-122-34-151-66z" fill="url(#body)" stroke="#7b8989" stroke-width="1.5"/>
+<path d="m285 269 98-77c22-16 56-20 86-18l150 17c28 3 54 15 77 39l49 55-166 18z" fill="url(#glass)" stroke="#77898b"/>
+<path d="m390 191-67 75 113 18 23-108M476 177l-19 110 120 14 79-86" stroke="#8d9996" stroke-opacity=".7" stroke-width="3"/>
+<path d="m285 270 290 37 170-21 59 39-211 42-409-25z" fill="#4a5555" stroke="#9ca19a" stroke-opacity=".5"/>
+<path d="m182 344 414 28 209-44M594 373l-8 100M326 361l-11 92M450 368l-11 109" stroke="#a0aaa6" stroke-opacity=".35"/>
+<path d="m616 376 186-37 15 59-195 42z" fill="#1b272a" stroke="#677374"/><path d="m640 390 143-27" stroke="#a4b6b4" stroke-width="3"/><path d="m674 412 115-22" stroke="#c2d0c6" stroke-width="7"/>
+<path d="m188 352 59 4-13 21-45-4z" fill="#fcb36c"/><path d="m784 332 40 13 10 16-50-10z" fill="#f9ebcf"/>
+<path d="m363 330 32 3M487 338l34 3" stroke="#b5c0b5" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="292" cy="443" rx="49" ry="65" fill="#070d10" transform="rotate(-7 292 443)"/><ellipse cx="292" cy="443" rx="34" ry="47" fill="#303b3e" stroke="#9da7a4" stroke-width="3"/><ellipse cx="292" cy="443" rx="14" ry="22" fill="#121c20"/>
+<path d="m275 413 34 59m-40-25 46-5m-27-44 7 90" stroke="#8b9693" stroke-width="4"/>
+<ellipse cx="710" cy="445" rx="49" ry="65" fill="#070d10" transform="rotate(-7 710 445)"/><ellipse cx="710" cy="445" rx="34" ry="47" fill="#303b3e" stroke="#9da7a4" stroke-width="3"/><ellipse cx="710" cy="445" rx="14" ry="22" fill="#121c20"/><path d="m693 415 34 59m-40-25 46-5m-27-44 7 90" stroke="#8b9693" stroke-width="4"/>
+<path d="m281 267-25 20 26 9 17-14M726 278l39-13 14 12-25 22" fill="#304145" stroke="#7f918e"/>
+</g></g>
+<g stroke="#e5a45d" stroke-width="1" opacity=".7"><path d="M437 227v-94h-160M640 331h174v-99M351 428v129H183"/><circle cx="437" cy="227" r="5" fill="#e5a45d"/><circle cx="640" cy="331" r="5" fill="#e5a45d"/><circle cx="351" cy="428" r="5" fill="#e5a45d"/></g>
+<g font-family="monospace" font-size="10" letter-spacing="1.5" fill="#a0aaa8"><text x="166" y="120">01 / ЭЛЕКТРОНИКА</text><text x="734" y="219">02 / ДИАГНОСТИКА</text><text x="151" y="580">03 / ХОДОВАЯ ЧАСТЬ</text></g>
+</svg>
