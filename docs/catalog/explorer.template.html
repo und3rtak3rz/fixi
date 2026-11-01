@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fixi — дерево автоуслуг</title>
+<meta name="description" content="Исследовательская версия дерева автоуслуг Fixi: категории, подкатегории, услуги и поисковые синонимы.">
+<style>
+  *{box-sizing:border-box}body{margin:0;background:#f7f8fa;color:#212a38;font:15px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}button,input,select{font:inherit}button,a,summary,input,select{-webkit-tap-highlight-color:transparent}a{color:#9d4436;text-underline-offset:4px}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #d57361;outline-offset:3px}[hidden]{display:none!important}.wrap{width:min(1120px,calc(100% - 48px));margin:auto}header{background:white;border-bottom:1px solid #dce1e8;padding:23px 0}.header-row{display:flex;justify-content:space-between;gap:24px;align-items:center}.brand{font-size:27px;font-weight:750;letter-spacing:-1.2px;color:#242b38;text-decoration:none}.brand span{color:#c76c59}.version{font-size:12px;color:#5d6878}.intro{padding:38px 0 25px}h1{font-size:35px;letter-spacing:-1.4px;line-height:1.2;margin:0 0 13px;font-weight:650}.intro>p{max-width:770px;color:#566273;margin:0;font-size:14px}.reference-links{display:flex;gap:20px;flex-wrap:wrap;margin-top:18px;font-size:13px}.controls{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:14px;padding:22px;background:#fff;border:1px solid #dce1e8;border-radius:16px;box-shadow:0 8px 23px #2d344509}.field{display:grid;gap:6px;min-width:0}label,.field>span{font-size:12px;color:#4f5c6d}input[type=search],select{width:100%;border:1px solid #cbd3df;border-radius:8px;background:#fff;color:#202c3e;min-height:43px;padding:9px 11px;min-width:0}input[type=search]{font-size:16px}.examples{display:flex;align-items:center;gap:7px;flex-wrap:wrap;padding:15px 0 6px;font-size:12px;color:#657084}.example{border:1px solid #dce1e8;background:#fff;color:#6e4a41;border-radius:20px;font-size:12px;padding:6px 11px;min-height:34px}.result-header{display:flex;justify-content:space-between;gap:20px;align-items:center;padding:19px 0 14px}.result-header p{font-size:13px;color:#536074;margin:0}.alias-toggle{display:flex;gap:8px;align-items:center;font-size:12px}.alias-toggle input{width:16px;height:16px;accent-color:#a95744}.section-label{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#68758a;margin:26px 0 11px}.category{margin-bottom:10px;border:1px solid #d8dfe9;border-radius:12px;background:#fff;overflow:hidden}.category>summary{padding:16px 20px;min-height:55px;font-size:16px;font-weight:600;cursor:pointer;list-style-position:inside}.category>summary .count{float:right;color:#68758a;font-size:12px;font-weight:400;margin-top:3px}.category[open]>summary{border-bottom:1px solid #e6eaf0;background:#fff7f2}.group{margin:0 19px;border-bottom:1px solid #e8ecf1}.group:last-child{border-bottom:0}.group>summary{padding:13px 0;min-height:46px;font-size:14px;color:#3d4d62;cursor:pointer;list-style-position:inside}.group>summary .count{color:#69768a;font-size:12px;margin-left:10px}.service-list{list-style:none;padding:0 0 8px 16px;margin:0}.service-item{padding:8px 0;border-top:1px solid #f0f2f6}.service-item:first-child{border-top:0}.service-link{display:inline;text-align:left;border:0;background:none;padding:3px 0;color:#25394f;line-height:1.5;font-size:14px}.service-link:hover{color:#9d4436;text-decoration:underline;text-underline-offset:4px}.aliases{font-size:12px;color:#66758a;margin-top:2px}.requirement{display:inline-block;font-size:11px;border-radius:5px;background:#edf1f7;color:#4d6079;padding:2px 6px;margin-left:7px}.requirement.held{background:#fff0dd;color:#795122}.crosslink{padding:11px 0 14px 16px;font-size:12px;color:#6b7689}.crosslink button{border:0;padding:3px 2px;background:none;color:#935141;font-size:12px;text-decoration:underline;text-underline-offset:3px}.empty{padding:30px 20px;border:1px dashed #bfc9d8;border-radius:10px;color:#526178;background:#fff}.intake{padding:16px 20px;background:#fff5ee;border:1px solid #eccdbd;border-radius:11px;margin:13px 0;font-size:13px}.intake strong{color:#713e2e}.intake ul{padding-left:20px;margin-bottom:0}.intake p{margin:7px 0 0}.footer{padding:30px 0 40px;color:#66748a;font-size:12px}.footer p{margin:7px 0}.detail-dialog{width:min(650px,calc(100% - 32px));max-height:90dvh;overflow:auto;border:1px solid #d9e0ea;border-radius:17px;padding:28px;color:#243246;box-shadow:0 25px 100px #26334b40;background:#fff}.detail-dialog::backdrop{background:#26334b80;backdrop-filter:blur(4px)}.dialog-top{display:flex;justify-content:space-between;gap:20px;font-size:12px;color:#69768a}.close{width:34px;height:34px;border-radius:50%;border:1px solid #dce2ec;background:#f6f7fa;color:#37465d;font-size:23px;line-height:1}.detail-dialog h2{font-size:25px;line-height:1.3;letter-spacing:-.5px;margin:17px 0}.path{color:#66758a;font-size:13px}.detail-dialog dl{display:grid;grid-template-columns:125px 1fr;gap:13px;font-size:13px}.detail-dialog dt{color:#69758a}.detail-dialog dd{margin:0;overflow-wrap:anywhere}.detail-dialog code{font-size:12px;background:#f1f4f8;padding:4px 6px;border-radius:5px}.evidence-note{padding:13px 15px;font-size:12px;background:#f4f6fa;border-radius:8px;line-height:1.7}.detail-sources{font-size:12px;padding-left:18px}.detail-sources li{margin:7px 0}mark{background:#ffead1;color:inherit;border-radius:2px}
+  @media(max-width:850px){.controls{grid-template-columns:1fr 1fr}.field:first-child{grid-column:1/-1}.wrap{width:calc(100% - 36px)}h1{font-size:31px}.category>summary{font-size:15px}.category>summary .count{font-size:11px}}
+  @media(max-width:500px){body{font-size:14px}.header-row{align-items:start}.version{max-width:160px;text-align:right;font-size:11px}.intro{padding:29px 0 21px}h1{font-size:29px;letter-spacing:-1px}.controls{grid-template-columns:1fr;padding:17px}.field:first-child{grid-column:auto}.controls select{font-size:16px}.result-header{display:block;padding-top:16px}.alias-toggle{margin-top:10px}.category>summary{padding:14px;font-size:14px}.category>summary .count{float:none;display:block;margin:4px 0 0 18px}.group{margin-inline:14px}.group>summary{font-size:13px}.service-list{padding-left:12px}.service-link{font-size:13px;min-height:32px}.aliases{font-size:11px}.detail-dialog{padding:22px}.detail-dialog dl{grid-template-columns:1fr;gap:4px}.detail-dialog dd{margin-bottom:12px}.detail-dialog h2{font-size:23px}.example{min-height:40px}.crosslink button{min-height:32px}.reference-links{gap:12px}}
+</style>
+</head>
+<body>
+<header><div class="wrap header-row"><a class="brand" href="../../landing-pages/index.html">fixi<span>.</span></a><div class="version">Каталог услуг · исследовательская версия<br>1 ноября 2026</div></div></header>
+<main class="wrap">
+  <section class="intro"><h1>Что нужно сделать с автомобилем?</h1><p>Полное дерево для обсуждения. Откройте раздел или найдите услугу обычными словами. Совместимость с конкретной машиной и возможности исполнителя в этом исследовательском просмотре не проверяются.</p><div class="reference-links"><a href="../research/service-taxonomy-research.md">Обоснование и источники</a><a href="tree.md">Дерево целиком</a><a href="services.json">JSON</a><a href="services.csv">CSV</a><a href="screenshot-mapping.md">Разбор скриншота</a></div></section>
+  <form class="controls" id="catalog-controls" role="search"><div class="field"><label for="query">Услуга или симптом</label><input type="search" id="query" placeholder="Например, сход-развал, шумка, русификация" autocomplete="off"></div><div class="field"><label for="category-select">Раздел</label><select id="category-select"><option value="all">Все разделы</option></select></div><div class="field"><label for="scope-select">Охват справочника</label><select id="scope-select"><option value="core">Основной каталог</option><option value="commercial">Грузовое расширение</option><option value="all">Все обычные услуги</option><option value="held">Решение о публикации отложено</option></select></div></form>
+  <div class="examples"><span>Попробуйте:</span><button class="example" data-query="развал" type="button">развал</button><button class="example" data-query="шумка" type="button">шумка</button><button class="example" data-query="русификация" type="button">русификация</button><button class="example" data-query="ГБЦ" type="button">ГБЦ</button><button class="example" data-query="не заряжается" type="button">не заряжается</button></div>
+  <div class="result-header"><p id="result-count" role="status" aria-live="polite"></p><label class="alias-toggle"><input type="checkbox" id="show-aliases">Показывать синонимы</label></div>
+  <section id="intake-results" aria-label="Уточнение симптомов"></section>
+  <section id="catalog-tree" aria-label="Дерево услуг"></section>
+  <div id="empty-state" class="empty" hidden>В выбранном охвате совпадений нет. Попробуйте более короткий запрос или другой раздел. Заявка без точного выбора услуги остаётся допустимым сценарием продукта.</div>
+</main>
+<footer class="wrap footer"><p>Это справочник исследовательских кандидатов, а не список доступных СТО. Счётчики показывают услуги, а не исполнителей.</p><p>Марки, модели, год, тип двигателя, детали кузова и способы выполнения задаются отдельными фильтрами и параметрами. Повторные входы используют тот же ID услуги.</p></footer>
+<dialog class="detail-dialog" id="service-dialog" aria-labelledby="service-title"><div class="dialog-top"><span>Карточка услуги · проект структуры данных</span><button type="button" class="close" id="close-dialog" aria-label="Закрыть">×</button></div><div id="detail-content"></div></dialog>
+<script id="catalog-data" type="application/json">__CATALOG_DATA__</script>
+<script>
+(() => {
+  const data=JSON.parse(document.getElementById('catalog-data').textContent);
+  const serviceMap=new Map(data.services.map(s=>[s.id,s]));
+  const categoryMap=new Map(data.categories.map(c=>[c.id,c]));
+  const groups=new Map(data.categories.flatMap(c=>c.groups.map(g=>[g.id,g])));
+  const sourceMap=new Map(data.sources.map(s=>[s.id,s]));
+  const query=document.getElementById('query'),categorySelect=document.getElementById('category-select'),scopeSelect=document.getElementById('scope-select'),showAliases=document.getElementById('show-aliases');
+  const tree=document.getElementById('catalog-tree'),intake=document.getElementById('intake-results'),count=document.getElementById('result-count'),empty=document.getElementById('empty-state'),dialog=document.getElementById('service-dialog');
+  const norm=value=>value.toLocaleLowerCase('ru').replaceAll('ё','е').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
+  const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const tokens=()=>norm(query.value).split(' ').filter(Boolean);
+  const plural=(n,forms)=>forms[n%100>=11&&n%100<=14?2:n%10===1?0:n%10>=2&&n%10<=4?1:2];
+  const index=new Map(data.services.map(s=>[s.id,norm([s.label,...s.aliases,groups.get(s.group_id).label].join(' '))]));
+  for(const cat of data.categories){const option=document.createElement('option');option.value=cat.id;option.textContent=cat.label;categorySelect.append(option);}
+  function inScope(s){const scope=scopeSelect.value;return scope==='held'?s.visibility==='review_required':s.visibility==='public'&&(scope==='all'||s.module===scope);}
+  function showService(id){
+    const s=serviceMap.get(id);if(!s)return;
+    const category=categoryMap.get(s.category_id),group=groups.get(s.group_id);
+    const requirements={hv_capability:'Компетенция работы с высоковольтной системой',qualified_provider:'Проверка профильной компетенции и условий',ownership_check:'Подтверждение права доступа к автомобилю / аккаунту'};
+    document.getElementById('detail-content').innerHTML=`<h2 id="service-title">${escape(s.label)}</h2><p class="path">${escape(category.label)} → ${escape(group.label)}</p><dl><dt>ID услуги</dt><dd><code>${escape(s.id)}</code></dd><dt>Поисковые названия</dt><dd>${s.aliases.map(escape).join('; ')||'Не заданы'}</dd><dt>Публикация</dt><dd>${s.visibility==='public'?'Кандидат для обычного каталога':'Отложена до отдельного решения'}</dd><dt>Типы силовой установки</dt><dd>${s.powertrains.length?s.powertrains.map(escape).join(', '):'Ограничение в черновике не задано. Совместимость не подтверждена.'}</dd><dt>Условия</dt><dd>${s.requirements.map(r=>escape(requirements[r]||r)).join('; ')||'Проверяются по услуге, автомобилю и исполнителю'}</dd></dl><p class="evidence-note">Название и место в дереве — предложение Fixi. Источники ниже подтверждают семейство работ, но не каждую строку каталога и не наличие этой услуги у конкретной СТО.</p><ul class="detail-sources">${s.source_ids.map(id=>sourceMap.get(id)).filter(Boolean).map(source=>`<li><a href="${escape(source.url)}" target="_blank" rel="noopener noreferrer">${escape(source.title)}</a></li>`).join('')}</ul>`;
+    if(!dialog.open)dialog.showModal();
+  }
+  function render(){
+    const ts=tokens();const scoped=data.services.filter(s=>inScope(s)&&(categorySelect.value==='all'||s.category_id===categorySelect.value));
+    let filtered=scoped.filter(s=>ts.every(t=>index.get(s.id).includes(t)));
+    if(ts.length&&!filtered.length)filtered=scoped.filter(s=>ts.every(t=>norm(categoryMap.get(s.category_id).label).includes(t)));
+    const found=new Set(filtered.map(s=>s.id));let output='',lastSection='',categoryCount=0;
+    for(const cat of data.categories){
+      const matchedGroups=cat.groups.map(g=>({group:g,services:g.service_ids.map(id=>serviceMap.get(id)).filter(s=>found.has(s.id))})).filter(g=>g.services.length);
+      if(!matchedGroups.length)continue;categoryCount++;
+      if(lastSection!==cat.section){output+=`<h2 class="section-label">${escape(cat.section)}</h2>`;lastSection=cat.section;}
+      const total=matchedGroups.reduce((sum,g)=>sum+g.services.length,0);
+      output+=`<details class="category" ${ts.length||categorySelect.value!=='all'?'open':''}><summary>${escape(cat.label)}<span class="count">${matchedGroups.length} ${plural(matchedGroups.length,['группа','группы','групп'])} · ${total} ${plural(total,['услуга','услуги','услуг'])}</span></summary>`;
+      for(const {group,services} of matchedGroups){
+        output+=`<details class="group" ${ts.length?'open':''}><summary>${escape(group.label)}<span class="count">${services.length}</span></summary><ul class="service-list">`;
+        for(const s of services){output+=`<li class="service-item"><button type="button" class="service-link" data-service-id="${escape(s.id)}">${escape(s.label)}</button>${s.visibility!=='public'?'<span class="requirement held">Публикация отложена</span>':s.requirements.includes('hv_capability')?'<span class="requirement">HV</span>':''}${showAliases.checked&&s.aliases.length?`<div class="aliases">${s.aliases.map(escape).join(' · ')}</div>`:''}</li>`;}
+        output+='</ul>';
+        const links=data.crosslinks.find(x=>x.from_group===group.id);
+        if(links){const visible=links.service_ids.map(id=>serviceMap.get(id)).filter(inScope);if(visible.length)output+=`<div class="crosslink">Также ищут: ${visible.map(s=>`<button type="button" data-service-id="${escape(s.id)}">${escape(s.label)}</button>`).join(' · ')}</div>`;}
+        output+='</details>';
+      }
+      output+='</details>';
+    }
+    tree.innerHTML=output;empty.hidden=filtered.length>0;
+    count.textContent=`${filtered.length} ${plural(filtered.length,['услуга','услуги','услуг'])} · ${categoryCount} ${plural(categoryCount,['раздел','раздела','разделов'])}${ts.length?' · поиск: «'+query.value.trim()+'»':''}`;
+    const routes=ts.length?data.symptom_routes.filter(r=>ts.every(t=>norm([r.label,...r.aliases].join(' ')).includes(t))).slice(0,3):[];
+    intake.innerHTML=routes.map(r=>`<div class="intake"><strong>${escape(r.label)}: сначала уточним</strong><ul>${r.clarifying_questions.map(q=>`<li>${escape(q)}</li>`).join('')}</ul><p>Направления поиска, а не диагноз: ${r.candidate_service_ids.map(id=>escape(serviceMap.get(id).label)).join('; ')}.</p></div>`).join('');
+  }
+  document.getElementById('catalog-controls').addEventListener('submit',e=>e.preventDefault());
+  query.addEventListener('input',render);categorySelect.addEventListener('change',render);scopeSelect.addEventListener('change',render);showAliases.addEventListener('change',render);
+  document.querySelectorAll('[data-query]').forEach(button=>button.addEventListener('click',()=>{query.value=button.dataset.query;categorySelect.value='all';render();query.focus();}));
+  tree.addEventListener('click',event=>{const button=event.target.closest('[data-service-id]');if(button)showService(button.dataset.serviceId);});
+  document.getElementById('close-dialog').addEventListener('click',()=>dialog.close());
+  dialog.addEventListener('click',event=>{if(event.target!==dialog)return;const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();});
+  render();
+})();
+</script>
+</body>
+</html>
